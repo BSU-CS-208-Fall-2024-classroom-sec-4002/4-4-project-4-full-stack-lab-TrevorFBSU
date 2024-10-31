@@ -1,8 +1,16 @@
 doctype html
-link(rel='stylesheet' href='css/style.css')
-
-head
-    title My First Full Stack
-body
-    h1 Simple TODO APP
-    p TODO: Complete the app!
+html 
+    head
+        title My First Full Stack
+        link(rel='stylesheet' href='css/style.css')
+    body
+        h1 TODO List
+        form(action="/", method="post") 
+            input(type="text", name="todo", placeholder="New Task")
+            input(type="submit", value="Add Task")
+        ul 
+          - for (let task of tasks)
+            li #{task.task}
+                form(action="/delete", method="post")
+                    input(type="hidden", name="id", value=task.id)
+                    input(type="submit", value="Delete") 

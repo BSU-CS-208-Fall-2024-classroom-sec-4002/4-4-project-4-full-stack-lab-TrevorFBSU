@@ -1,3 +1,28 @@
-body{
-    background-color: hotpink;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+h1 {
+    color: #ff6347;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5xp 0;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+}
+input[type="submibt"] {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
